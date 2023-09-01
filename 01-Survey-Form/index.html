@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>freeCodeCamp Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="content-box">
+      <div class="mini-box">
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description">
+          Thank you for taking the time to help us improve the platform
+        </p>
+      </div>
+      <form id="survey-form">
+        <label id="name-label"
+          >Name
+          <input type="text" id="name" placeholder="Enter your name" required />
+        </label>
+        <label id="email-label"
+          >Email
+          <input
+            type="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+        </label>
+        <label id="number-label"
+          >Age (Optional)
+          <input
+            type="number"
+            id="number"
+            placeholder="Age"
+            min="18"
+            max="60"
+          />
+        </label>
+        <label
+          >Gender
+          <select id="dropdown">
+            <option>Woman</option>
+            <option>Man</option>
+            <option>Transgender</option>
+            <option>Non-binary</option>
+            <option>Prefer not to respond</option>
+          </select>
+        </label>
+        <fieldset>
+          <legend>What is your type?</legend>
+          <ul>
+            <li>
+              <label>
+                <input type="radio" name="status" value="morning-person" />
+                Morning person</label
+              >
+            </li>
+            <li>
+              <label>
+                <input type="radio" name="status" value="night-person" /> Night
+                person</label
+              >
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>What is/are your favourite pet?</legend>
+          <ul>
+            <li>
+              <label>
+                <input type="checkbox" name="pet" value="dog" /> Dog</label
+              >
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="pet" value="cat" /> Cat</label
+              >
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="pet" value="rabbit" />
+                Rabbit</label
+              >
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="pet" value="bird" /> Bird</label
+              >
+            </li>
+          </ul>
+        </fieldset>
+        <label
+          >What is your dream job?
+          <br />
+          <textarea rows="3" cols="30"></textarea>
+        </label>
+        <button id="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>

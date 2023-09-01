@@ -1,0 +1,143 @@
+:root {
+  --border-color: #f9d949;
+  --bg-color: #3c486b;
+  --text-color: #f0f0f0;
+  --contrast-color: #f45050;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: helvetica, sans-serif;
+  font-size: 1.02em;
+}
+
+body {
+  width: auto;
+  height: auto;
+}
+
+#main-doc {
+  width: 100%;
+  height: auto;
+  color: var(--text-color);
+  border: 5px solid var(--border-color);
+}
+
+#navbar {
+  width: 12vw;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  font-weight: bold;
+  padding: 0.4vh 2vw;
+  border-right: 5px solid var(--border-color);
+  background-color: var(--border-color);
+}
+
+.nav-header,
+.nav-link {
+  width: 15vw;
+  text-decoration: none;
+  border-bottom: 5px solid var(--border-color);
+  padding: 1.4vh;
+  text-align: center;
+  color: var(--bg-color);
+}
+
+.nav-link:hover {
+  height: auto;
+  color: var(--bg-color);
+  font-size: 1.5rem;
+  transition: 0.32s;
+  border: solid var(--bg-color);
+  background: linear-gradient(
+    270deg,
+    var(--bg-color),
+    var(--border-color) 30%,
+    var(--contrast-color) 90%
+  );
+  z-index: 1;
+}
+
+.content-box {
+  width: auto;
+  height: auto;
+  display: grid;
+  color: var(--text-color);
+  padding: 1.7vh 10vw 0 21vw;
+  background: linear-gradient(
+    90deg,
+    var(--bg-color) 50%,
+    var(--contrast-color) 97%
+  );
+}
+
+span {
+  background-color: var(--text-color);
+}
+
+span:hover {
+  cursor: none;
+  background-color: var(--bg-color);
+}
+
+details:hover {
+  cursor: pointer;
+}
+
+.camera-tip {
+  color: var(--border-color);
+}
+
+header {
+  font-size: 2.7rem;
+  font-weight: bold;
+}
+
+.main-section {
+  margin-bottom: 10vh;
+}
+
+section header {
+  margin-bottom: 1.5vh;
+}
+
+ul,
+ol {
+  display: grid;
+  gap: 10px;
+  list-style-position: inside;
+}
+
+.sleep-content,
+h3 {
+  list-style: none;
+  margin: 1vh 0 1vh 0;
+}
+
+@media (max-width: 1400px) {
+  .nav-link {
+    font-size: 1rem;
+  }
+  .nav-link:hover {
+    font-size: 1rem;
+    transition: 0.2s;
+  }
+  .nav-header,
+  .nav-link {
+    width: 14.5vw;
+    border-bottom: 5px solid var(--border-color);
+    padding: 1.5vh;
+  }
+}
+
+@media (max-width: 1068px) {
+  header {
+    font-size: 2em;
+  }
+}
